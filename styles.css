@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.carrousel-container {
+    width: 50%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: transform 0.7s;
+}
+
+.carrousel-wraper {
+    gap: 20px;
+    display: flex;
+    width: 400%;
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    border-radius: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:nth-child(1) {
+    margin-left: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: rgb(31, 180, 98);
+    z-index: 10;
+    padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
